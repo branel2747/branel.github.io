@@ -25,11 +25,14 @@ const catoaplast = () =>{
 
 
 const restart =()=>{
+    const texto = document.getElementById("igapear");
     const gameobj=document.getElementById("game")
     gameobj.style.height="auto";
     document.getElementById("start").style.display="block";
-    document.getElementById("igapear").style.display="none";
+    texto.style.display="none";
     const catobj = document.getElementById("cato")
     catobj.style.display="none";
     document.getElementById("end").style.display="none";
+    catobj.style.backgroundImage="url('./resources/images/cato.jpg')";
+    texto.innerHTML= "SEARCH FOR THE CAT!!!!!";
 }
